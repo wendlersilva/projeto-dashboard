@@ -2,6 +2,7 @@
     --primary-color: #004EDA;
     --grey: #F2F2F8
     --default-padding: 2rem;
+    --middle-padding: calc(var(--default-padding) / 2);
     --black: #111;
     --color-text: #5A5A5F;
 }
@@ -51,7 +52,7 @@ main{
 }
 
 .menu, 
-.top-nav-menu{
+.topnav-menu{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -59,9 +60,14 @@ main{
 }
 
 .menu a, 
-.top-nav-menu {
+.topnav-menu a {
     text-decoration: none;
     color: #5A5A5F;
+}
+
+.menu svg, 
+.topnav-menu svg {
+    vertical-align: bottom;
 }
 
 .topnav-menu{
@@ -87,6 +93,21 @@ img{
 
 .perfil{
     margin-right: var(--default-padding);
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.perfil-thumb {
+    height: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: var(--middle-padding);
+    box-sizing: border-box;
+}
+
+.perfil-thumb img {
+    height: 100%;
 }
 
 .perfil-name{
