@@ -24,6 +24,9 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .top-nav{
@@ -98,6 +101,10 @@ main>figure {
     justify-content: space-between;
     flex-grow: 1;
     padding-top: var(--default-padding);
+}
+
+.menu li {
+    margin-top: 1rem;
 }
 
 img{
