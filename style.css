@@ -1,6 +1,6 @@
-:root{
+:root {
     --primary-color: #004EDA;
-    --grey: #F2F2F8
+    --grey: #F2F2F8;
     --default-padding: 2rem;
     --middle-padding: calc(var(--default-padding) / 2);
     --black: #111;
@@ -140,6 +140,42 @@ img{
     color: color-mix(in srgb, var (--black), transparent 60%);
 }
 
-.summary{
+.summary {
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--middle-padding) var(--default-padding);
+    border-radius: 4px;
+}
+
+.summary article {
+    padding: var(--middle-padding) 0;
+}
+
+.summary_number {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-left: var(--middle-padding);
+}
+
+.summary_separated {
+    width: 2px;
+    background-color: var(--grey);
+    align-self: stretch;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: calc(var(--middle-padding) / 2) var(--default-padding);
+}
+
+.summary_btn {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
 }
