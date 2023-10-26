@@ -9,12 +9,10 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-
     color: var(--color-text);
     display: grid;
-    grid-template-columns: 240px 1fr;
-    grid-template-rows: 64px auto;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 4rem minmax(calc(100vh - 4rem), auto);
     margin: 0;
 }
 
@@ -42,10 +40,12 @@ main{
     grid-row: 2 / -1;
     grid-column: 2 / -1;
     background-color: var(--grey);
+
     display: grid;
     gap: var(--default-padding);
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: min-content;
+
     padding: var(--default-padding);
 }
 
@@ -62,13 +62,14 @@ main>figure {
 }
 
 .main-link-novo{
-    padding-left: var( --default-padding);
-    padding-top: var( --default-padding);
+    padding-left: var(--default-padding);
+    padding-top: var(--default-padding);
     display: inline-block;
     color: var(--black);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
+    padding-right: var(--default-padding);
 }
 
 .menu, 
@@ -77,6 +78,10 @@ main>figure {
     margin: 0;
     padding: 0;
     padding-left: var(--default-padding);
+}
+
+.menu{
+    padding-right: var(--default-padding);
 }
 
 .menu a, 
